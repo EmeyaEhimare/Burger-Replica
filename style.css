@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+    font-family: "Roboto Slab", serif;;
+}
+
+:root{
+    --primary-color: #502314;
+    --secondary-color:#faf3dd
+}
+
+.navbar{
+    height: 60px;
+    background-color: var(--secondary-color);
+    display: flex;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding-top: 0;
+    margin-top: 0;
+    z-index: 10;
+}
+
+.navbar-items {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.navbar-items ul{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.navbar-items li{
+    list-style: none;
+}
+
+.navbar-items li:hover{
+    background-color: #eec8bb;
+    border-radius: 20px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.navbar-items a{
+    text-decoration: none;
+    color: brown;
+}
+
+
+.nav-logo{
+    width: 40px;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    display: none;
+    height: 500px;
+    width: 1000px;
+    margin-left: 10%;
+    padding-top: 100px;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/* .slide{
+    height: 500px;
+    width: 1000px;
+    margin-left: 10%;
+    padding-top: 50px;
+}  */
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: transparent;
+    color: brown;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.previous{
+    left: 0;
+}
+
+.next{
+    right:0
+}
+
+@keyframes fade {
+    from{opacity: .5}
+    to{opacity: 1;}
+}
+
+section{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+#app{
+    background-color: #d72300;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    /* padding-bottom: -1px; */
+}
+
+
+#app .phone{
+    width: 500px;
+    margin-left: 100px;
+}
+
+#app p {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    font-weight: 900;
+    margin-right: 100px;
+    margin-top: 40px;
+    line-height: 60px;
+
+}
+
+#app .google{
+    width: 140px;
+    margin-top: 20px;
+}
+
+#app .trademark{
+    font-size: 0.7rem;
+    font-weight: 900;
+    line-height: normal;
+}
+
+#news{
+    background-color: var(--secondary-color);
+    height: 500px;
+    margin-top: -1px;
+    color: #502314;
+}
+
+.contain{
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+#news img{
+    width: 100%;
+    height: 200px;
+    width: 350px;
+}
+
+ #news h3{
+    font-weight: 900;
+    font-size: 1.4rem;
+    padding-top: 30px;
+    margin: 0 100px;
+} 
+
+#news h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+.hidden{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    filter: blur(5px);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logo:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 600ms;
+}
+
+.logo:nth-child(4){
+    transition-delay: 800ms;
+}
+
+footer{
+    background-color: var(--primary-color);
+    height: 385px;
+    padding-top: 60px;
+   
+    color: #fff;
+}
+
+.foot-container{
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+
+.footer-right{
+    display: flex;
+    gap: 50px;
+}
+
+.first-li{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+    
+}
+
+
+.footer-right li{
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+hr{
+    margin: 0 100px;
+   
+}
+
+.footer-foot{
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.socials img{
+    margin: 0 10px;
+    cursor: pointer;
+}
+

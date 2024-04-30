@@ -1,0 +1,307 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10],{
+
+/***/ 1491:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vuetify-loader/lib/loader.js??ref--4!./node_modules/cache-loader/dist/cjs.js??ref--3-0!./node_modules/babel-loader/lib??ref--3-1!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--7!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/pages/index.vue?vue&type=template&id=0d9e18a6&
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c,
+    _setup = _vm._self._setupProxy;
+  return _c('div', [_c('AppSocialHead', {
+    attrs: {
+      "title": _vm.pageTitle,
+      "description": _vm.pageDescription,
+      "ogImage": _vm.pageOgImage,
+      "twitterImage": _vm.pageTwitterImage
+    }
+  }), _vm._v(" "), _c('AppCustomScripts', {
+    attrs: {
+      "pageScripts": _vm.pageCustomScripts
+    }
+  }), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: _vm.showLoader,
+      expression: "showLoader"
+    }],
+    staticClass: "loader-container"
+  }, [_c('div', {
+    staticClass: "loader"
+  })]), _vm._v(" "), !_vm.showLoader ? _c('PageBuilder', {
+    attrs: {
+      "content": _vm.homepageData.content,
+      "header": _vm.header
+    }
+  }) : _vm._e()], 1);
+};
+var staticRenderFns = [];
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/index.vue?vue&type=template&id=0d9e18a6&
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+var asyncToGenerator = __webpack_require__(21);
+
+// EXTERNAL MODULE: ./node_modules/regenerator-runtime/runtime.js
+var runtime = __webpack_require__(63);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
+var es_regexp_exec = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.constructor.js
+var es_regexp_constructor = __webpack_require__(300);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.to-string.js
+var es_regexp_to_string = __webpack_require__(40);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
+var es_array_concat = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.map.js
+var es_array_map = __webpack_require__(54);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.values.js
+var es_object_values = __webpack_require__(237);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
+var es_array_find = __webpack_require__(64);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
+var es_object_to_string = __webpack_require__(4);
+
+// EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
+var vue_runtime_esm = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./node_modules/@nuxtjs/composition-api/dist/runtime/index.mjs + 1 modules
+var dist_runtime = __webpack_require__(30);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/pageBuilder/index.vue + 652 modules
+var pageBuilder = __webpack_require__(717);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/shared/AppSocialHead.vue + 4 modules
+var AppSocialHead = __webpack_require__(714);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/shared/AppCustomScripts.vue + 4 modules
+var AppCustomScripts = __webpack_require__(718);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--3-0!./node_modules/babel-loader/lib??ref--3-1!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/pages/index.vue?vue&type=script&lang=js&
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { ROUTES } from '../services/routes';
+
+/* harmony default export */ var pagesvue_type_script_lang_js_ = (Object(dist_runtime["b" /* defineComponent */])({
+  name: 'Homepage',
+  components: {
+    PageBuilder: pageBuilder["default"],
+    AppSocialHead: AppSocialHead["a" /* default */],
+    AppCustomScripts: AppCustomScripts["a" /* default */]
+  },
+  validate: function validate(_ref) {
+    var app = _ref.app,
+      route = _ref.route;
+    return new RegExp("/(".concat(app.i18n.locale, ")?/?$")).test(route === null || route === void 0 ? void 0 : route.path);
+  },
+  setup: function setup() {
+    var _homepageData$value6, _homepageData$value6$;
+    var store = Object(dist_runtime["i" /* useStore */])();
+    var router = Object(dist_runtime["h" /* useRouter */])();
+    var _useContext = Object(dist_runtime["e" /* useContext */])(),
+      i18n = _useContext.i18n,
+      params = _useContext.params;
+    var showLoader = Object(vue_runtime_esm["m" /* ref */])(true);
+    var templateMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      return store.state.indexData.template;
+    });
+    var isPreviewMode = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat;
+      return (_store$state$indexDat = store.state.indexData) === null || _store$state$indexDat === void 0 ? void 0 : _store$state$indexDat.isPreviewMode;
+    });
+    var currentPageDataContentPreview = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat2, _store$state$indexDat3, _store$state$indexDat4;
+      return (_store$state$indexDat2 = store.state.indexData) === null || _store$state$indexDat2 === void 0 ? void 0 : (_store$state$indexDat3 = _store$state$indexDat2.previewData) === null || _store$state$indexDat3 === void 0 ? void 0 : (_store$state$indexDat4 = _store$state$indexDat3.page) === null || _store$state$indexDat4 === void 0 ? void 0 : _store$state$indexDat4.content;
+    });
+    var pagesMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      return store.state.indexData.pages;
+    });
+    var notFoundPageMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat5, _store$state$indexDat6;
+      return (_store$state$indexDat5 = store.state.indexData) === null || _store$state$indexDat5 === void 0 ? void 0 : (_store$state$indexDat6 = _store$state$indexDat5.notFoundPage) === null || _store$state$indexDat6 === void 0 ? void 0 : _store$state$indexDat6[i18n.locale];
+    });
+    var routesMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat7;
+      return (_store$state$indexDat7 = store.state.indexData) === null || _store$state$indexDat7 === void 0 ? void 0 : _store$state$indexDat7.routes;
+    });
+    var currentLocale = Object(vue_runtime_esm["a" /* computed */])(function () {
+      return i18n.locale === i18n.defaultLocale ? '' : '/' + i18n.locale;
+    });
+
+    // Check if we setup 404 page
+    var isNotFoundPage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _notFoundPageMapState;
+      if (((_notFoundPageMapState = notFoundPageMapState.value) === null || _notFoundPageMapState === void 0 ? void 0 : _notFoundPageMapState.url) !== undefined) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    var isPageFound = /*#__PURE__*/function () {
+      var _ref2 = Object(asyncToGenerator["a" /* default */])( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+        var _params$value, _params$value2, _params$value3, _params$value4, _params$value5, _params$value6, _params$value7, _params$value8, _params$value9;
+        var slugRoute, routesLangMap, currentPageDataTemp, _notFoundPageMapState2, redirect, _redirect;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              slugRoute = (_params$value = params.value) !== null && _params$value !== void 0 && _params$value.subnested ? decodeURI("".concat((_params$value2 = params.value) === null || _params$value2 === void 0 ? void 0 : _params$value2.slug, "/").concat((_params$value3 = params.value) === null || _params$value3 === void 0 ? void 0 : _params$value3.nested, "/").concat((_params$value4 = params.value) === null || _params$value4 === void 0 ? void 0 : _params$value4.subnested)) : (_params$value5 = params.value) !== null && _params$value5 !== void 0 && _params$value5.nested ? decodeURI("".concat((_params$value6 = params.value) === null || _params$value6 === void 0 ? void 0 : _params$value6.slug, "/").concat((_params$value7 = params.value) === null || _params$value7 === void 0 ? void 0 : _params$value7.nested)) : decodeURI("".concat((_params$value8 = params.value) === null || _params$value8 === void 0 ? void 0 : _params$value8.slug));
+              routesLangMap = Object.values(routesMapState.value).map(function (item) {
+                return item === null || item === void 0 ? void 0 : item[i18n.locale];
+              });
+              currentPageDataTemp = routesLangMap.find(function (page) {
+                return decodeURI(page) === slugRoute;
+              }); // Skip if is restaurant page cause it is dynamics
+              // Skip for preview mode
+              if (!(currentPageDataTemp === undefined && ((_params$value9 = params.value) === null || _params$value9 === void 0 ? void 0 : _params$value9.slug) !== undefined && !isPreviewMode.value)) {
+                _context.next = 15;
+                break;
+              }
+              if (!isNotFoundPage.value) {
+                _context.next = 10;
+                break;
+              }
+              _context.next = 7;
+              return router.push(currentLocale.value + ((_notFoundPageMapState2 = notFoundPageMapState.value) === null || _notFoundPageMapState2 === void 0 ? void 0 : _notFoundPageMapState2.url));
+            case 7:
+              redirect = _context.sent;
+              _context.next = 13;
+              break;
+            case 10:
+              _context.next = 12;
+              return router.push(currentLocale.value + '/');
+            case 12:
+              _redirect = _context.sent;
+            case 13:
+              _context.next = 16;
+              break;
+            case 15:
+              return _context.abrupt("return", true);
+            case 16:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee);
+      }));
+      return function isPageFound() {
+        return _ref2.apply(this, arguments);
+      };
+    }();
+    // Check if page is found
+    isPageFound();
+
+    // This needs refactoring
+    var header = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _templateMapState$val, _templateMapState$val2, _templateMapState$val3, _templateMapState$val4;
+      return ((_templateMapState$val = templateMapState.value) === null || _templateMapState$val === void 0 ? void 0 : (_templateMapState$val2 = _templateMapState$val.header) === null || _templateMapState$val2 === void 0 ? void 0 : _templateMapState$val2.template) == null ? true : ((_templateMapState$val3 = templateMapState.value) === null || _templateMapState$val3 === void 0 ? void 0 : (_templateMapState$val4 = _templateMapState$val3.header) === null || _templateMapState$val4 === void 0 ? void 0 : _templateMapState$val4.template) === 'template_1';
+    });
+    var homepageData = Object(vue_runtime_esm["a" /* computed */])(function () {
+      if (isPreviewMode.value) {
+        return currentPageDataContentPreview.value;
+      } else {
+        var _pagesMapState$value;
+        return (_pagesMapState$value = pagesMapState.value) === null || _pagesMapState$value === void 0 ? void 0 : _pagesMapState$value[i18n.locale].find(function (item) {
+          return item.isHomepage === true;
+        });
+      }
+    });
+    var pageTitle = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _homepageData$value, _homepageData$value$s;
+      var pageTitleTemp = (_homepageData$value = homepageData.value) === null || _homepageData$value === void 0 ? void 0 : (_homepageData$value$s = _homepageData$value.seo) === null || _homepageData$value$s === void 0 ? void 0 : _homepageData$value$s.pageTitle;
+      return pageTitleTemp || '';
+    });
+    var pageDescription = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _homepageData$value2, _homepageData$value2$;
+      var pageDescriptionTemp = (_homepageData$value2 = homepageData.value) === null || _homepageData$value2 === void 0 ? void 0 : (_homepageData$value2$ = _homepageData$value2.seo) === null || _homepageData$value2$ === void 0 ? void 0 : _homepageData$value2$.pageDescription;
+      return pageDescriptionTemp || '';
+    });
+    var pageOgImage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _homepageData$value3, _homepageData$value3$;
+      var pageSeoImage = (_homepageData$value3 = homepageData.value) === null || _homepageData$value3 === void 0 ? void 0 : (_homepageData$value3$ = _homepageData$value3.seo) === null || _homepageData$value3$ === void 0 ? void 0 : _homepageData$value3$.pageOgImage;
+      return pageSeoImage || '';
+    });
+    var pageTwitterImage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _homepageData$value4, _homepageData$value4$;
+      var pageSeoImage = (_homepageData$value4 = homepageData.value) === null || _homepageData$value4 === void 0 ? void 0 : (_homepageData$value4$ = _homepageData$value4.seo) === null || _homepageData$value4$ === void 0 ? void 0 : _homepageData$value4$.pageTwitterImage;
+      return pageSeoImage || '';
+    });
+    var pageCustomScripts = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _homepageData$value5;
+      return (_homepageData$value5 = homepageData.value) === null || _homepageData$value5 === void 0 ? void 0 : _homepageData$value5.customScripts;
+    });
+    Object(dist_runtime["f" /* useMeta */])({
+      link: [{
+        rel: 'canonical',
+        href: (_homepageData$value6 = homepageData.value) === null || _homepageData$value6 === void 0 ? void 0 : (_homepageData$value6$ = _homepageData$value6.seo) === null || _homepageData$value6$ === void 0 ? void 0 : _homepageData$value6$.canonical
+      }]
+    });
+    Object(vue_runtime_esm["j" /* onMounted */])(function () {
+      showLoader.value = false;
+    });
+    return {
+      showLoader: showLoader,
+      header: header,
+      homepageData: homepageData,
+      pageTitle: pageTitle,
+      pageDescription: pageDescription,
+      pageOgImage: pageOgImage,
+      pageTwitterImage: pageTwitterImage,
+      pageCustomScripts: pageCustomScripts,
+      isPageFound: isPageFound
+    };
+  },
+  head: {}
+}));
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/index.vue?vue&type=script&lang=js&
+ /* harmony default export */ var marketing_website_app_pagesvue_type_script_lang_js_ = (pagesvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(8);
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/index.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  marketing_website_app_pagesvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var pages = __webpack_exports__["default"] = (component.exports);
+
+/***/ })
+
+}]);

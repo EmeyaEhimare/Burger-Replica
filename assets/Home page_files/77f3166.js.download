@@ -1,0 +1,554 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[8],{
+
+/***/ 1493:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vuetify-loader/lib/loader.js??ref--4!./node_modules/cache-loader/dist/cjs.js??ref--3-0!./node_modules/babel-loader/lib??ref--3-1!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--7!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/pages/_slug/_nested/index.vue?vue&type=template&id=50488563&
+var render = function render() {
+  var _vm$currentPostData$i;
+  var _vm = this,
+    _c = _vm._self._c,
+    _setup = _vm._self._setupProxy;
+  return _c('div', [_c('AppSocialHead', {
+    attrs: {
+      "title": _vm.pageTitle,
+      "description": _vm.pageDescription,
+      "ogImage": _vm.pageOgImage,
+      "twitterImage": _vm.pageTwitterImage
+    }
+  }), _vm._v(" "), _c('AppCustomScripts', {
+    attrs: {
+      "pageScripts": _vm.pageCustomScript
+    }
+  }), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: _vm.showLoader,
+      expression: "showLoader"
+    }],
+    staticClass: "loader-container"
+  }, [_c('div', {
+    staticClass: "loader"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "page-mb"
+  }, [_vm.isSinglePostPage && !_vm.showLoader ? _c('SinglePost', {
+    attrs: {
+      "title": _vm.currentPostData.title,
+      "image": (_vm$currentPostData$i = _vm.currentPostData.image) === null || _vm$currentPostData$i === void 0 ? void 0 : _vm$currentPostData$i.url,
+      "content": _vm.currentPostData.content
+    }
+  }) : _vm._e(), _vm._v(" "), _vm.isRestaurantsPage && !_vm.showLoader ? _c('SingleRestaurant') : _vm._e(), _vm._v(" "), _vm.isMenuPage && !_vm.showLoader ? _c('MenuCategoryPage', {
+    attrs: {
+      "category": _vm.currentMenuCategoryData
+    }
+  }) : _vm._e()], 1)], 1);
+};
+var staticRenderFns = [];
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/_slug/_nested/index.vue?vue&type=template&id=50488563&
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+var asyncToGenerator = __webpack_require__(21);
+
+// EXTERNAL MODULE: ./node_modules/regenerator-runtime/runtime.js
+var runtime = __webpack_require__(63);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
+var es_array_find = __webpack_require__(64);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
+var es_object_to_string = __webpack_require__(4);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
+var es_array_concat = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.map.js
+var es_array_map = __webpack_require__(54);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.values.js
+var es_object_values = __webpack_require__(237);
+
+// EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
+var vue_runtime_esm = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./node_modules/@nuxtjs/composition-api/dist/runtime/index.mjs + 1 modules
+var dist_runtime = __webpack_require__(30);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/shared/AppSocialHead.vue + 4 modules
+var AppSocialHead = __webpack_require__(714);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/shared/AppCustomScripts.vue + 4 modules
+var AppCustomScripts = __webpack_require__(718);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/SingleRestaurant.vue + 5 modules
+var SingleRestaurant = __webpack_require__(1048);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/SinglePost.vue + 4 modules
+var SinglePost = __webpack_require__(732);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/MenuCategoryPage.vue + 4 modules
+var MenuCategoryPage = __webpack_require__(1049);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--3-0!./node_modules/babel-loader/lib??ref--3-1!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/pages/_slug/_nested/index.vue?vue&type=script&lang=js&
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { CouponObj } from '../../../interfaces/Coupons';
+// import { ApiResponse } from '../../../interfaces/Location';
+// import { TrendingCard } from '../../../interfaces/Trending';
+// import head from '../../../mixins/head';
+// import notFoundCall from '../../../mixins/notFoundCall';
+
+/* harmony default export */ var _nestedvue_type_script_lang_js_ = (Object(dist_runtime["b" /* defineComponent */])({
+  name: 'singlePost',
+  components: {
+    SinglePost: SinglePost["a" /* default */],
+    AppSocialHead: AppSocialHead["a" /* default */],
+    AppCustomScripts: AppCustomScripts["a" /* default */],
+    SingleRestaurant: SingleRestaurant["a" /* default */],
+    MenuCategoryPage: MenuCategoryPage["a" /* default */]
+  },
+  setup: function setup() {
+    var store = Object(dist_runtime["i" /* useStore */])();
+    var router = Object(dist_runtime["h" /* useRouter */])();
+    var _useContext = Object(dist_runtime["e" /* useContext */])(),
+      i18n = _useContext.i18n,
+      params = _useContext.params;
+    var showLoader = Object(vue_runtime_esm["m" /* ref */])(true);
+    var pagesMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat, _store$state$indexDat2;
+      return (_store$state$indexDat = store.state.indexData) === null || _store$state$indexDat === void 0 ? void 0 : (_store$state$indexDat2 = _store$state$indexDat.pages) === null || _store$state$indexDat2 === void 0 ? void 0 : _store$state$indexDat2[i18n.locale];
+    });
+    var postsMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat3, _store$state$indexDat4;
+      return (_store$state$indexDat3 = store.state.indexData) === null || _store$state$indexDat3 === void 0 ? void 0 : (_store$state$indexDat4 = _store$state$indexDat3.posts) === null || _store$state$indexDat4 === void 0 ? void 0 : _store$state$indexDat4[i18n.locale];
+    });
+    var productsMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat5, _store$state$indexDat6;
+      return (_store$state$indexDat5 = store.state.indexData) === null || _store$state$indexDat5 === void 0 ? void 0 : (_store$state$indexDat6 = _store$state$indexDat5.products) === null || _store$state$indexDat6 === void 0 ? void 0 : _store$state$indexDat6[i18n.locale];
+    });
+
+    // Preview
+    var isPreviewMode = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat7;
+      return (_store$state$indexDat7 = store.state.indexData) === null || _store$state$indexDat7 === void 0 ? void 0 : _store$state$indexDat7.isPreviewMode;
+    });
+    var currentPageDataContentPreview = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat8;
+      return (_store$state$indexDat8 = store.state.indexData) === null || _store$state$indexDat8 === void 0 ? void 0 : _store$state$indexDat8.previewData.page.content;
+    });
+    var currentPageDataPreview = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat9;
+      return (_store$state$indexDat9 = store.state.indexData) === null || _store$state$indexDat9 === void 0 ? void 0 : _store$state$indexDat9.previewData.page;
+    });
+    var notFoundPageMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat10, _store$state$indexDat11;
+      return (_store$state$indexDat10 = store.state.indexData) === null || _store$state$indexDat10 === void 0 ? void 0 : (_store$state$indexDat11 = _store$state$indexDat10.notFoundPage) === null || _store$state$indexDat11 === void 0 ? void 0 : _store$state$indexDat11[i18n.locale];
+    });
+    var routesMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat12;
+      return (_store$state$indexDat12 = store.state.indexData) === null || _store$state$indexDat12 === void 0 ? void 0 : _store$state$indexDat12.routes;
+    });
+    var currentLocale = Object(vue_runtime_esm["a" /* computed */])(function () {
+      return i18n.locale === i18n.defaultLocale ? '' : '/' + i18n.locale;
+    });
+    var currentPageData = Object(vue_runtime_esm["a" /* computed */])(function () {
+      if (isPreviewMode.value) {
+        return currentPageDataPreview.value;
+      } else {
+        var _params$value, _pagesMapState$value;
+        var slugRoute = decodeURI("/".concat((_params$value = params.value) === null || _params$value === void 0 ? void 0 : _params$value.slug));
+        var currentPageDataTemp = (_pagesMapState$value = pagesMapState.value) === null || _pagesMapState$value === void 0 ? void 0 : _pagesMapState$value.find(function (page) {
+          return decodeURI(page.path) === slugRoute;
+        });
+        return currentPageDataTemp;
+      }
+    });
+    var currentPageDataContent = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPageData$valu;
+      var contentData = [];
+      if (isPreviewMode.value) {
+        contentData = currentPageDataContentPreview.value;
+      } else if ((_currentPageData$valu = currentPageData.value) !== null && _currentPageData$valu !== void 0 && _currentPageData$valu.content) {
+        var _currentPageData$valu2;
+        contentData = (_currentPageData$valu2 = currentPageData.value) === null || _currentPageData$valu2 === void 0 ? void 0 : _currentPageData$valu2.content;
+      } else {
+        contentData = [];
+      }
+      return contentData;
+    });
+    var currentPostData = Object(vue_runtime_esm["a" /* computed */])(function () {
+      if (isPreviewMode.value) {
+        return currentPageDataPreview.value;
+      } else {
+        var _params$value2, _postsMapState$value;
+        var slugRoute = decodeURI("/".concat((_params$value2 = params.value) === null || _params$value2 === void 0 ? void 0 : _params$value2.nested));
+        var currentPostDataTemp = (_postsMapState$value = postsMapState.value) === null || _postsMapState$value === void 0 ? void 0 : _postsMapState$value.find(function (post) {
+          return decodeURI("/".concat(post.slug)) === slugRoute;
+        });
+        return currentPostDataTemp;
+      }
+    });
+    var currentMenuCategoryData = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _params$value3, _productsMapState$val;
+      var categorySlug = decodeURI("".concat((_params$value3 = params.value) === null || _params$value3 === void 0 ? void 0 : _params$value3.nested));
+      var currentMenuCategory = (_productsMapState$val = productsMapState.value.items) === null || _productsMapState$val === void 0 ? void 0 : _productsMapState$val.find(function (item) {
+        return (item === null || item === void 0 ? void 0 : item.categorySlug) === categorySlug;
+      });
+      if (currentMenuCategory !== undefined) {
+        return currentMenuCategory;
+      } else {
+        return false;
+      }
+    });
+    var isSinglePostPage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      if (currentPostData.value !== undefined) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    var isRestaurantsPage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPageData$valu3;
+      return !!((_currentPageData$valu3 = currentPageData.value) !== null && _currentPageData$valu3 !== void 0 && _currentPageData$valu3.isRestaurantsPage);
+    });
+    var isMenuPage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPageData$valu4;
+      return !!((_currentPageData$valu4 = currentPageData.value) !== null && _currentPageData$valu4 !== void 0 && _currentPageData$valu4.isMenuPage);
+    });
+
+    // Check if we setup 404 page
+    var isNotFoundPage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _notFoundPageMapState;
+      if (((_notFoundPageMapState = notFoundPageMapState.value) === null || _notFoundPageMapState === void 0 ? void 0 : _notFoundPageMapState.url) !== undefined) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    var isPageFound = /*#__PURE__*/function () {
+      var _ref = Object(asyncToGenerator["a" /* default */])( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+        var _params$value4, _params$value5, _params$value6, _params$value7, _params$value8, _params$value9, _params$value10, _params$value11, _params$value12;
+        var slugRoute, routesLangMap, currentPageDataTemp, _notFoundPageMapState2;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              slugRoute = (_params$value4 = params.value) !== null && _params$value4 !== void 0 && _params$value4.subnested ? decodeURI("".concat((_params$value5 = params.value) === null || _params$value5 === void 0 ? void 0 : _params$value5.slug, "/").concat((_params$value6 = params.value) === null || _params$value6 === void 0 ? void 0 : _params$value6.nested, "/").concat((_params$value7 = params.value) === null || _params$value7 === void 0 ? void 0 : _params$value7.subnested)) : (_params$value8 = params.value) !== null && _params$value8 !== void 0 && _params$value8.nested ? decodeURI("".concat((_params$value9 = params.value) === null || _params$value9 === void 0 ? void 0 : _params$value9.slug, "/").concat((_params$value10 = params.value) === null || _params$value10 === void 0 ? void 0 : _params$value10.nested)) : decodeURI("".concat((_params$value11 = params.value) === null || _params$value11 === void 0 ? void 0 : _params$value11.slug));
+              routesLangMap = Object.values(routesMapState.value).map(function (item) {
+                return item === null || item === void 0 ? void 0 : item[i18n.locale];
+              });
+              currentPageDataTemp = routesLangMap.find(function (page) {
+                return decodeURI(page) === slugRoute;
+              }); // Skip if is restaurant page cause it is dynamics
+              // Skip for preview mode
+              if (!(currentPageDataTemp === undefined && ((_params$value12 = params.value) === null || _params$value12 === void 0 ? void 0 : _params$value12.slug) !== undefined && !isPreviewMode.value && !isRestaurantsPage.value)) {
+                _context.next = 13;
+                break;
+              }
+              if (!isNotFoundPage.value) {
+                _context.next = 9;
+                break;
+              }
+              _context.next = 7;
+              return router.push(currentLocale.value + ((_notFoundPageMapState2 = notFoundPageMapState.value) === null || _notFoundPageMapState2 === void 0 ? void 0 : _notFoundPageMapState2.url));
+            case 7:
+              _context.next = 11;
+              break;
+            case 9:
+              _context.next = 11;
+              return router.push(currentLocale.value + '/');
+            case 11:
+              _context.next = 14;
+              break;
+            case 13:
+              return _context.abrupt("return", true);
+            case 14:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee);
+      }));
+      return function isPageFound() {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    // Check if page is found
+    isPageFound();
+    var pageCustomScript = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPageData$valu5;
+      return (_currentPageData$valu5 = currentPageData.value) === null || _currentPageData$valu5 === void 0 ? void 0 : _currentPageData$valu5.customScripts;
+    });
+    var pageTitle = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPostData$valu, _currentPostData$valu2, _currentPageData$valu6, _currentPageData$valu7;
+      var pageTitleTemp = isSinglePostPage.value ? (_currentPostData$valu = currentPostData.value) === null || _currentPostData$valu === void 0 ? void 0 : (_currentPostData$valu2 = _currentPostData$valu.seo) === null || _currentPostData$valu2 === void 0 ? void 0 : _currentPostData$valu2.pageTitle : (_currentPageData$valu6 = currentPageData.value) === null || _currentPageData$valu6 === void 0 ? void 0 : (_currentPageData$valu7 = _currentPageData$valu6.seo) === null || _currentPageData$valu7 === void 0 ? void 0 : _currentPageData$valu7.pageTitle;
+      return pageTitleTemp || '';
+    });
+    var pageDescription = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPostData$valu3, _currentPostData$valu4, _currentPageData$valu8, _currentPageData$valu9;
+      var pageDescriptionTemp = isSinglePostPage.value ? (_currentPostData$valu3 = currentPostData.value) === null || _currentPostData$valu3 === void 0 ? void 0 : (_currentPostData$valu4 = _currentPostData$valu3.seo) === null || _currentPostData$valu4 === void 0 ? void 0 : _currentPostData$valu4.pageDescription : (_currentPageData$valu8 = currentPageData.value) === null || _currentPageData$valu8 === void 0 ? void 0 : (_currentPageData$valu9 = _currentPageData$valu8.seo) === null || _currentPageData$valu9 === void 0 ? void 0 : _currentPageData$valu9.pageDescription;
+      return pageDescriptionTemp || '';
+    });
+    var pageOgImage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPostData$valu5, _currentPostData$valu6, _currentPageData$valu10, _currentPageData$valu11;
+      var pageSeoImage = isSinglePostPage.value ? (_currentPostData$valu5 = currentPostData.value) === null || _currentPostData$valu5 === void 0 ? void 0 : (_currentPostData$valu6 = _currentPostData$valu5.seo) === null || _currentPostData$valu6 === void 0 ? void 0 : _currentPostData$valu6.pageOgImage : (_currentPageData$valu10 = currentPageData.value) === null || _currentPageData$valu10 === void 0 ? void 0 : (_currentPageData$valu11 = _currentPageData$valu10.seo) === null || _currentPageData$valu11 === void 0 ? void 0 : _currentPageData$valu11.pageOgImage;
+      return pageSeoImage || '';
+    });
+    var pageTwitterImage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentPostData$valu7, _currentPostData$valu8, _currentPageData$valu12, _currentPageData$valu13;
+      var pageSeoImage = isSinglePostPage.value ? (_currentPostData$valu7 = currentPostData.value) === null || _currentPostData$valu7 === void 0 ? void 0 : (_currentPostData$valu8 = _currentPostData$valu7.seo) === null || _currentPostData$valu8 === void 0 ? void 0 : _currentPostData$valu8.pageTwitterImage : (_currentPageData$valu12 = currentPageData.value) === null || _currentPageData$valu12 === void 0 ? void 0 : (_currentPageData$valu13 = _currentPageData$valu12.seo) === null || _currentPageData$valu13 === void 0 ? void 0 : _currentPageData$valu13.pageTwitterImage;
+      return pageSeoImage || '';
+    });
+    Object(vue_runtime_esm["j" /* onMounted */])(function () {
+      // console.log(' -->  menu/category')
+      showLoader.value = false;
+    });
+    return {
+      showLoader: showLoader,
+      isPreviewMode: isPreviewMode,
+      isSinglePostPage: isSinglePostPage,
+      isRestaurantsPage: isRestaurantsPage,
+      isMenuPage: isMenuPage,
+      currentPostData: currentPostData,
+      currentPageDataContent: currentPageDataContent,
+      currentMenuCategoryData: currentMenuCategoryData,
+      pageCustomScript: pageCustomScript,
+      pageTitle: pageTitle,
+      pageDescription: pageDescription,
+      pageOgImage: pageOgImage,
+      pageTwitterImage: pageTwitterImage,
+      isPageFound: isPageFound
+    };
+  }
+}));
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/_slug/_nested/index.vue?vue&type=script&lang=js&
+ /* harmony default export */ var _slug_nestedvue_type_script_lang_js_ = (_nestedvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(8);
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/_slug/_nested/index.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  _slug_nestedvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var _nested = __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ 713:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(730);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(7).default
+var update = add("2f80961e", content, true, {"sourceMap":false});
+
+/***/ }),
+
+/***/ 729:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_cache_loader_dist_cjs_js_ref_8_oneOf_1_0_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_1_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_2_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SinglePost_vue_vue_type_style_index_0_id_122a01a4_prod_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(713);
+/* harmony import */ var _node_modules_cache_loader_dist_cjs_js_ref_8_oneOf_1_0_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_1_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_2_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SinglePost_vue_vue_type_style_index_0_id_122a01a4_prod_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_cache_loader_dist_cjs_js_ref_8_oneOf_1_0_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_1_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_2_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_vue_loader_lib_index_js_vue_loader_options_SinglePost_vue_vue_type_style_index_0_id_122a01a4_prod_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
+/***/ 730:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".trend{max-width:738px;margin:0 auto}.trend--full{max-width:930px}@media(max-width: 960px){.trend--full{padding:0 24px}}@media(max-width: 768px){.trend--full{padding:0}}.trend a{font-size:16px !important}.trend .img{width:100%;height:auto;max-height:513px;border-radius:var(--image-border-radius)}@media(max-width: 768px){.trend .img{border-radius:0}}", ""]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {};
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 732:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js
+var VContainer = __webpack_require__(701);
+
+// CONCATENATED MODULE: ./node_modules/vuetify-loader/lib/loader.js??ref--4!./node_modules/cache-loader/dist/cjs.js??ref--3-0!./node_modules/babel-loader/lib??ref--3-1!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--7!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/components/pageBuilder/blocks/acf/SinglePost.vue?vue&type=template&id=122a01a4&
+
+
+var SinglePostvue_type_template_id_122a01a4_render = function render() {
+  var _vm = this,
+    _c = _vm._self._c,
+    _setup = _vm._self._setupProxy;
+  return _c('div', {
+    staticClass: "page-mb"
+  }, [_c('div', {
+    staticClass: "trend"
+  }, [_c('Breadcrumbs'), _vm._v(" "), _c(VContainer["a" /* default */], [_vm.title != null ? _c('h2', {
+    staticClass: "my-6",
+    domProps: {
+      "innerHTML": _vm._s(_vm.title)
+    }
+  }) : _vm._e()])], 1), _vm._v(" "), _c('div', {
+    staticClass: "trend trend--full"
+  }, [_c('AppImage', {
+    attrs: {
+      "imgClass": "img mb-6",
+      "src": _vm.image,
+      "alt": "".concat(_vm.title, " image")
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "trend"
+  }, [_c('PageBuilder', {
+    attrs: {
+      "content": _vm.content
+    }
+  })], 1)]);
+};
+var staticRenderFns = [];
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/SinglePost.vue?vue&type=template&id=122a01a4&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
+var es_regexp_exec = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.replace.js
+var es_string_replace = __webpack_require__(50);
+
+// EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
+var vue_runtime_esm = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/Breadcrumbs.vue + 4 modules
+var Breadcrumbs = __webpack_require__(706);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/shared/AppImage.vue + 4 modules
+var AppImage = __webpack_require__(87);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/pageBuilder/index.vue + 652 modules
+var pageBuilder = __webpack_require__(717);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--13-0!./node_modules/ts-loader??ref--13-1!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/components/pageBuilder/blocks/acf/SinglePost.vue?vue&type=script&lang=ts&
+
+
+
+// import { TrendingCard } from '../../../../interfaces/Trending';
+
+
+
+/* harmony default export */ var SinglePostvue_type_script_lang_ts_ = (vue_runtime_esm["c" /* default */].extend({
+  components: {
+    Breadcrumbs: Breadcrumbs["a" /* default */],
+    AppImage: AppImage["a" /* default */],
+    PageBuilder: pageBuilder["default"]
+  },
+  props: {
+    title: {
+      type: String,
+      default: ''
+    },
+    image: {
+      type: String,
+      default: 'https://placehold.co/600x400'
+    },
+    content: {
+      type: Array,
+      default: function _default() {
+        return [];
+      }
+    }
+  },
+  watch: {
+    postData: {
+      handler: function handler() {
+        /**
+         * Redirect to '/parentUrl/post' if 'post' has been accessed
+         * just like '/post'
+         */
+        var pageLink = this.pageLink(this.data.path);
+        var routePath = this.removeTrailingSlash(this.$route.path);
+        if (routePath !== pageLink) {
+          var pathToUse = routePath.split('/').length >= pageLink.split('/').length ? routePath : pageLink;
+          this.$router.replace({
+            path: pathToUse
+          });
+        }
+      }
+    }
+  }
+}));
+// CONCATENATED MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/SinglePost.vue?vue&type=script&lang=ts&
+ /* harmony default export */ var acf_SinglePostvue_type_script_lang_ts_ = (SinglePostvue_type_script_lang_ts_); 
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/SinglePost.vue?vue&type=style&index=0&id=122a01a4&prod&lang=scss&
+var SinglePostvue_type_style_index_0_id_122a01a4_prod_lang_scss_ = __webpack_require__(729);
+
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(8);
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/SinglePost.vue
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  acf_SinglePostvue_type_script_lang_ts_,
+  SinglePostvue_type_template_id_122a01a4_render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var SinglePost = __webpack_exports__["a"] = (component.exports);
+
+/***/ })
+
+}]);

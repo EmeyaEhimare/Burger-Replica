@@ -1,0 +1,286 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
+
+/***/ 1494:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vuetify-loader/lib/loader.js??ref--4!./node_modules/cache-loader/dist/cjs.js??ref--3-0!./node_modules/babel-loader/lib??ref--3-1!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--7!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/pages/_slug/_nested/_subnested.vue?vue&type=template&id=50d0e465&
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c,
+    _setup = _vm._self._setupProxy;
+  return _c('div', {
+    staticClass: "page-mb"
+  }, [_c('AppSocialHead', {
+    attrs: {
+      "title": _vm.pageTitle,
+      "description": _vm.pageDescription,
+      "ogImage": _vm.pageOgImage,
+      "twitterImage": _vm.pageTwitterImage
+    }
+  }), _vm._v(" "), _c('AppCustomScripts', {
+    attrs: {
+      "pageScripts": _vm.pageCustomScript
+    }
+  }), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: _vm.showLoader,
+      expression: "showLoader"
+    }],
+    staticClass: "loader-container"
+  }, [_c('div', {
+    staticClass: "loader"
+  })]), _vm._v(" "), _vm.currentProductData && !_vm.showLoader ? _c('MenuProductPage', {
+    attrs: {
+      "data": _vm.currentProductData
+    }
+  }) : _vm._e()], 1);
+};
+var staticRenderFns = [];
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/_slug/_nested/_subnested.vue?vue&type=template&id=50d0e465&
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+var asyncToGenerator = __webpack_require__(21);
+
+// EXTERNAL MODULE: ./node_modules/regenerator-runtime/runtime.js
+var runtime = __webpack_require__(63);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
+var es_array_concat = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.map.js
+var es_array_map = __webpack_require__(54);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.values.js
+var es_object_values = __webpack_require__(237);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
+var es_array_find = __webpack_require__(64);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
+var es_object_to_string = __webpack_require__(4);
+
+// EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
+var vue_runtime_esm = __webpack_require__(0);
+
+// EXTERNAL MODULE: ./node_modules/@nuxtjs/composition-api/dist/runtime/index.mjs + 1 modules
+var dist_runtime = __webpack_require__(30);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/shared/AppSocialHead.vue + 4 modules
+var AppSocialHead = __webpack_require__(714);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/shared/AppCustomScripts.vue + 4 modules
+var AppCustomScripts = __webpack_require__(718);
+
+// EXTERNAL MODULE: ./apps/marketing-website-app/components/pageBuilder/blocks/acf/MenuProductPage.vue + 4 modules
+var MenuProductPage = __webpack_require__(731);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--3-0!./node_modules/babel-loader/lib??ref--3-1!./node_modules/vue-loader/lib??vue-loader-options!./apps/marketing-website-app/pages/_slug/_nested/_subnested.vue?vue&type=script&lang=js&
+
+
+
+
+
+
+
+
+
+
+// import getContent from '../../../services/getContent';
+// import ApiServices from '../../../services/apiServices';
+// import PageBuilder from '../../../components/pageBuilder/index.vue';
+// import Breadcrumbs from '../../../components/Breadcrumbs.vue';
+
+
+
+
+
+// import { PagesContent, CustomScripts } from '../../../interfaces/Content';
+
+// import { CouponObj } from '../../../interfaces/Coupons';
+// import { ApiResponse } from '../../../interfaces/Location';
+// import { TrendingCard } from '../../../interfaces/Trending';
+// import head from '../../../mixins/head';
+// import notFoundCall from '../../../mixins/notFoundCall';
+
+/* harmony default export */ var _subnestedvue_type_script_lang_js_ = (Object(dist_runtime["b" /* defineComponent */])({
+  name: 'Post',
+  components: {
+    MenuProductPage: MenuProductPage["a" /* default */],
+    //  PageBuilder,
+    // Breadcrumbs,
+    AppSocialHead: AppSocialHead["a" /* default */],
+    AppCustomScripts: AppCustomScripts["a" /* default */]
+  },
+  setup: function setup() {
+    var _params$value10, _params$value11;
+    var store = Object(dist_runtime["i" /* useStore */])();
+    var router = Object(dist_runtime["h" /* useRouter */])();
+    var _useContext = Object(dist_runtime["e" /* useContext */])(),
+      i18n = _useContext.i18n,
+      params = _useContext.params;
+    var showLoader = Object(vue_runtime_esm["m" /* ref */])(true);
+    var productsMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat, _store$state$indexDat2;
+      return (_store$state$indexDat = store.state.indexData) === null || _store$state$indexDat === void 0 ? void 0 : (_store$state$indexDat2 = _store$state$indexDat.products) === null || _store$state$indexDat2 === void 0 ? void 0 : _store$state$indexDat2[i18n.locale];
+    });
+    var isPreviewMode = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat3;
+      return (_store$state$indexDat3 = store.state.indexData) === null || _store$state$indexDat3 === void 0 ? void 0 : _store$state$indexDat3.isPreviewMode;
+    });
+    var notFoundPageMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat4, _store$state$indexDat5;
+      return (_store$state$indexDat4 = store.state.indexData) === null || _store$state$indexDat4 === void 0 ? void 0 : (_store$state$indexDat5 = _store$state$indexDat4.notFoundPage) === null || _store$state$indexDat5 === void 0 ? void 0 : _store$state$indexDat5[i18n.locale];
+    });
+    var routesMapState = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _store$state$indexDat6;
+      return (_store$state$indexDat6 = store.state.indexData) === null || _store$state$indexDat6 === void 0 ? void 0 : _store$state$indexDat6.routes;
+    });
+    var currentLocale = Object(vue_runtime_esm["a" /* computed */])(function () {
+      return i18n.locale === i18n.defaultLocale ? '' : '/' + i18n.locale;
+    });
+
+    // Check if we setup 404 page
+    var isNotFoundPage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _notFoundPageMapState;
+      if (((_notFoundPageMapState = notFoundPageMapState.value) === null || _notFoundPageMapState === void 0 ? void 0 : _notFoundPageMapState.url) !== undefined) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    var isPageFound = /*#__PURE__*/function () {
+      var _ref = Object(asyncToGenerator["a" /* default */])( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+        var _params$value, _params$value2, _params$value3, _params$value4, _params$value5, _params$value6, _params$value7, _params$value8, _params$value9;
+        var slugRoute, routesLangMap, currentPageDataTemp, _notFoundPageMapState2;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              slugRoute = (_params$value = params.value) !== null && _params$value !== void 0 && _params$value.subnested ? decodeURI("".concat((_params$value2 = params.value) === null || _params$value2 === void 0 ? void 0 : _params$value2.slug, "/").concat((_params$value3 = params.value) === null || _params$value3 === void 0 ? void 0 : _params$value3.nested, "/").concat((_params$value4 = params.value) === null || _params$value4 === void 0 ? void 0 : _params$value4.subnested)) : (_params$value5 = params.value) !== null && _params$value5 !== void 0 && _params$value5.nested ? decodeURI("".concat((_params$value6 = params.value) === null || _params$value6 === void 0 ? void 0 : _params$value6.slug, "/").concat((_params$value7 = params.value) === null || _params$value7 === void 0 ? void 0 : _params$value7.nested)) : decodeURI("".concat((_params$value8 = params.value) === null || _params$value8 === void 0 ? void 0 : _params$value8.slug));
+              routesLangMap = Object.values(routesMapState.value).map(function (item) {
+                return item === null || item === void 0 ? void 0 : item[i18n.locale];
+              });
+              currentPageDataTemp = routesLangMap.find(function (page) {
+                return decodeURI(page) === slugRoute;
+              }); // Skip if is restaurant page cause it is dynamics
+              // Skip for preview mode
+              if (!(currentPageDataTemp === undefined && ((_params$value9 = params.value) === null || _params$value9 === void 0 ? void 0 : _params$value9.slug) !== undefined && !isPreviewMode.value)) {
+                _context.next = 13;
+                break;
+              }
+              if (!isNotFoundPage.value) {
+                _context.next = 9;
+                break;
+              }
+              _context.next = 7;
+              return router.push(currentLocale.value + ((_notFoundPageMapState2 = notFoundPageMapState.value) === null || _notFoundPageMapState2 === void 0 ? void 0 : _notFoundPageMapState2.url));
+            case 7:
+              _context.next = 11;
+              break;
+            case 9:
+              _context.next = 11;
+              return router.push(currentLocale.value + '/');
+            case 11:
+              _context.next = 14;
+              break;
+            case 13:
+              return _context.abrupt("return", true);
+            case 14:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee);
+      }));
+      return function isPageFound() {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    // Check if page is found
+    // isPageFound();
+
+    var categorySlug = decodeURI((_params$value10 = params.value) === null || _params$value10 === void 0 ? void 0 : _params$value10.nested);
+    var productSlug = decodeURI("/".concat((_params$value11 = params.value) === null || _params$value11 === void 0 ? void 0 : _params$value11.subnested));
+
+    // Get current product data
+    var currentProductData = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _productsMapState$val, _productsMapState$val2, _category$children;
+      var category = (_productsMapState$val = productsMapState.value) === null || _productsMapState$val === void 0 ? void 0 : (_productsMapState$val2 = _productsMapState$val.items) === null || _productsMapState$val2 === void 0 ? void 0 : _productsMapState$val2.find(function (item) {
+        return decodeURI(item === null || item === void 0 ? void 0 : item.categorySlug) === categorySlug;
+      });
+      var currentProduct = category === null || category === void 0 ? void 0 : (_category$children = category.children) === null || _category$children === void 0 ? void 0 : _category$children.find(function (product) {
+        return decodeURI(product.path) === productSlug;
+      });
+      return currentProduct;
+    });
+    var pageCustomScript = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentProductData$v;
+      return (_currentProductData$v = currentProductData.value) === null || _currentProductData$v === void 0 ? void 0 : _currentProductData$v.customScripts;
+    });
+    var pageTitle = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentProductData$v2, _currentProductData$v3;
+      return ((_currentProductData$v2 = currentProductData.value) === null || _currentProductData$v2 === void 0 ? void 0 : (_currentProductData$v3 = _currentProductData$v2.seo) === null || _currentProductData$v3 === void 0 ? void 0 : _currentProductData$v3.pageTitle) || '';
+    });
+    var pageDescription = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentProductData$v4, _currentProductData$v5;
+      return ((_currentProductData$v4 = currentProductData.value) === null || _currentProductData$v4 === void 0 ? void 0 : (_currentProductData$v5 = _currentProductData$v4.seo) === null || _currentProductData$v5 === void 0 ? void 0 : _currentProductData$v5.pageDescription) || '';
+    });
+    var pageOgImage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentProductData$v6, _currentProductData$v7;
+      return ((_currentProductData$v6 = currentProductData.value) === null || _currentProductData$v6 === void 0 ? void 0 : (_currentProductData$v7 = _currentProductData$v6.seo) === null || _currentProductData$v7 === void 0 ? void 0 : _currentProductData$v7.pageOgImage) || '';
+    });
+    var pageTwitterImage = Object(vue_runtime_esm["a" /* computed */])(function () {
+      var _currentProductData$v8, _currentProductData$v9;
+      return ((_currentProductData$v8 = currentProductData.value) === null || _currentProductData$v8 === void 0 ? void 0 : (_currentProductData$v9 = _currentProductData$v8.seo) === null || _currentProductData$v9 === void 0 ? void 0 : _currentProductData$v9.pageTwitterImage) || '';
+    });
+    Object(vue_runtime_esm["j" /* onMounted */])(function () {
+      // console.log('PAGES -> SLUG (/menu/category/product)');
+      showLoader.value = false;
+    });
+    return {
+      showLoader: showLoader,
+      currentProductData: currentProductData,
+      pageCustomScript: pageCustomScript,
+      pageTitle: pageTitle,
+      pageDescription: pageDescription,
+      pageOgImage: pageOgImage,
+      pageTwitterImage: pageTwitterImage,
+      isPageFound: isPageFound
+    };
+  }
+}));
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/_slug/_nested/_subnested.vue?vue&type=script&lang=js&
+ /* harmony default export */ var _nested_subnestedvue_type_script_lang_js_ = (_subnestedvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(8);
+
+// CONCATENATED MODULE: ./apps/marketing-website-app/pages/_slug/_nested/_subnested.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  _nested_subnestedvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var _subnested = __webpack_exports__["default"] = (component.exports);
+
+/***/ })
+
+}]);
