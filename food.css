@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(245, 231, 231);
+}
+
+.food{
+    /* margin: 105px auto; */
+    margin-top: 200px;
+    margin-bottom: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.food img{
+    margin-bottom: 100px ;
+    background-color: transparent;
+    
+}
+
+.food h1{
+    /* color: #2f0e07; */
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    
+}
+
+.food p{
+    text-align: justify;
+    font-size: small;
+    margin: 0 280px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 800;
+    
+}
+
+.secondp{
+    text-align: justify;
+    font-size: 2rem;
+}
+
+
+
