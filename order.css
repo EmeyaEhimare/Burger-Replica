@@ -1,0 +1,132 @@
+.navbar {
+    height: 40px;
+    background-color: var(--secondary-color);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    z-index: 10;
+    
+  }
+
+
+.navigate {
+    background-color: var(--secondary-color);
+    padding-top: 50px;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    overflow:visible;
+    /* margin-bottom: 30px; */
+    margin-top: -10px;
+    z-index: 10;
+    
+  }
+  
+  .navigate-items a{
+      padding: 0%;
+      text-decoration: underline;
+  }
+  
+  .navigate-items p{
+      display: inline-block;
+      margin-left : 10%;
+      color: var(--primary-color);
+      font-size: small;
+      color: #6f1d1b;
+  }
+  
+  .navigate-items p:hover{
+      color: brown;
+      font-weight: bold;
+  }
+  
+  .navigate-items p:hover{
+      border-bottom: 2px solid rgba(141, 138, 138, 0.5);
+      padding-bottom:15px;
+  
+  }
+  
+  .links{
+    background-color: #6f1d1b;
+    padding: 150px;
+    color: white;
+  }
+  
+  .links{
+      padding-top: 30px;
+  }
+  
+  .menu img{
+    width: 100px;
+  }
+
+  #grilled-burgers{
+    padding-top: 100px;
+    margin: 0 100px;
+  }
+
+  
+
+  .flex-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+  }
+
+  .order-container{
+    display: flex;
+    gap: 30px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    margin: 0 5px;
+    align-content: center;
+    padding-top: 5px;
+    box-shadow: 0 0 5px 5px rgba(187, 160, 120, 0.603);
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(245, 231, 231);
+    margin-top:10px;
+    margin-bottom: 15px;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  .order-container img{
+    width: 100px;
+    padding: 0;
+  }
+
+  .add-to-cart{
+    cursor: pointer;
+  }
+
+  .add-to-cart:active{
+    background-color:  rgb(245, 231, 231);
+    border: none;
+  }
+
+  #classic{
+    padding-top: 100px;
+    margin: 0 100px;
+  }
+
+
+  #sides{
+    margin: 0 100px;
+    padding-top: 100px;
+  }
+
+
+  #sides img{
+    width: 70px;
+  }
+
+  #drinks{
+    padding: 100px 0;
+    margin: 0 100px;
+    
+  }

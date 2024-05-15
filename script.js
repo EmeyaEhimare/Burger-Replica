@@ -77,3 +77,8 @@ const observered = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => observered.observe(section));
 
+
+
+// Order Cart
+// order.js
+
