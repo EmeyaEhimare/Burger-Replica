@@ -83,6 +83,8 @@ sections.forEach((section) => observered.observe(section));
 // order.js
 // JavaScript for functional cart that adds and removes each product
 
+// JavaScript for functional cart that adds and removes each product
+
 document.addEventListener("DOMContentLoaded", function () {
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartItem = document.getElementById("cartItem");
@@ -94,14 +96,19 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateCart() {
         cartItem.innerHTML = "";
         total = 0;
-        cartItems.forEach(item => {
+        cartItems.forEach((item, index) => {
             const itemTotal = item.quantity * item.price;
             total += itemTotal;
             cartItem.innerHTML += `
-                <div>${item.quantity} x ${item.name}: ₦${itemTotal.toFixed(2)}</div>
+                <div>
+                    <span>${item.quantity} x ${item.name}: ₦${itemTotal.toFixed(2)}</span>
+                    <button class="remove-from-cart" data-index="${index}">Remove</button>
+                </div>
             `;
         });
         totalElement.textContent = `₦${total.toFixed(2)}`;
+        // Add event listeners to remove buttons after updating the cart
+        addRemoveFromCartListeners();
     }
 
     // Add item to cart
@@ -115,6 +122,23 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCart();
     }
 
+    // Remove item from cart
+    function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        updateCart();
+    }
+
+    // Add event listeners to remove buttons
+    function addRemoveFromCartListeners() {
+        const removeButtons = document.querySelectorAll(".remove-from-cart");
+        removeButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                const index = parseInt(this.dataset.index);
+                removeFromCart(index);
+            });
+        });
+    }
+
     // Add event listeners to all add-to-cart buttons
     addToCartButtons.forEach(button => {
         button.addEventListener("click", function () {
@@ -124,5 +148,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
 
   
