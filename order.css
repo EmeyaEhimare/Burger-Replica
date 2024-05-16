@@ -13,18 +13,33 @@
   }
 
 
+  /* .menu{
+    background-color: var(--secondary-color);
+  } */
+
 .navigate {
     background-color: var(--secondary-color);
     padding-top: 50px;
     width: 100%;
-    height: 80px;
+    height: 90px;
     position: fixed;
     overflow:visible;
     /* margin-bottom: 30px; */
     margin-top: -10px;
     z-index: 10;
-    
   }
+
+  .cart{
+    margin-left: 80%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .fa-cart-shopping{
+    color: #6f1d1b;
+    cursor: pointer;
+  }
+
   
   .navigate-items a{
       padding: 0%;
@@ -65,17 +80,138 @@
   }
 
   #grilled-burgers{
-    padding-top: 100px;
+    padding-top: 150px;
     margin: 0 100px;
   }
 
+  .container{
+    
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    position: fixed;
+    padding: 20px;
+  }
+
+  #root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
   
+}
+
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  padding: 15px;
+}
+.img-box{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images{
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+.bottom{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+h2{
+  font-size: 20px;
+  color: red;
+}
+button{
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+button:hover{
+  background-color: #333;
+}
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+.row-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rowimg{
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+.fa-trash:hover{
+  cursor: pointer;
+  color: #333;
+}
 
   .flex-menu{
     display: grid;
     grid-template-columns: repeat(2, 300px);
     gap: 30px;
   }
+
 
   .order-container{
     display: flex;

@@ -81,4 +81,48 @@ sections.forEach((section) => observered.observe(section));
 
 // Order Cart
 // order.js
+// JavaScript for functional cart that adds and removes each product
 
+document.addEventListener("DOMContentLoaded", function () {
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    const cartItem = document.getElementById("cartItem");
+    const totalElement = document.getElementById("total");
+    let cartItems = [];
+    let total = 0;
+
+    // Update cart items and total price
+    function updateCart() {
+        cartItem.innerHTML = "";
+        total = 0;
+        cartItems.forEach(item => {
+            const itemTotal = item.quantity * item.price;
+            total += itemTotal;
+            cartItem.innerHTML += `
+                <div>${item.quantity} x ${item.name}: ₦${itemTotal.toFixed(2)}</div>
+            `;
+        });
+        totalElement.textContent = `₦${total.toFixed(2)}`;
+    }
+
+    // Add item to cart
+    function addToCart(name, price) {
+        const existingItem = cartItems.find(item => item.name === name);
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cartItems.push({ name: name, price: price, quantity: 1 });
+        }
+        updateCart();
+    }
+
+    // Add event listeners to all add-to-cart buttons
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const itemName = this.dataset.item;
+            const itemPrice = parseFloat(this.dataset.price.replace("₦", "").replace(",", ""));
+            addToCart(itemName, itemPrice);
+        });
+    });
+});
+
+  

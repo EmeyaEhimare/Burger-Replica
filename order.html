@@ -6,6 +6,9 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="order.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
     <link
       rel="shortcut icon"
       href="assets/hamburger-svgrepo-com.svg"
@@ -23,6 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <title>Menu</title>
   </head>
   <body>
@@ -44,6 +48,7 @@
             <li><a href="">Restaurants</a></li>
             <li><a href="">Career</a></li>
             <li><a href="">News</a></li>
+            
           </ul>
         </div>
       </div>
@@ -55,23 +60,38 @@
         <a href="#classic"><p>Classic</p></a>
         <a href="#sides"><p>Sides</p></a>
         <a href="#drinks"><p>Drinks</p></a>
-       
-
       </div>
+      <div class="cart"><i class="fa-solid fa-cart-shopping" ></i><p id="count">0</p></div>
     </section>
+
+    
 
     <!-- <div class="links">
       <a  href="./index.html">Home / <a href="./menu.html">Menu</a></a>
     </div> -->
 
-    <section class="menu" id="grilled-burgers">
+    <section class="menu"  id="grilled-burgers">
+      <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+               
+            </div>
+            <button>Order</button>
+        </div>
+    </div>
+
       <h2>Signature</h2>
       <div class="flex-menu">
         <div class="order-container">
           <div>
-            <p>Whopper</p>
-            <p>₦6,100</p>
-            <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+            <p class="burger-name">Whopper</p>
+            <p class="price">₦6,100</p>
+            <button class="add-to-cart" data-item="Whopper" data-price="₦6,100">
               Add to Cart
             </button>
           </div>
@@ -80,14 +100,15 @@
               src="./assets/grilled flamed/Whopper-Sandw-1024x659.jpg"
               alt=""
             />
+            
           </div>
         </div>
 
         <div class="order-container">
           <div>
-            <p>Steakhouse</p>
-            <p>₦7,200</p>
-            <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+            <p class="burger-name">Steakhouse</p>
+            <p class="price">₦7,200</p>
+            <button class="add-to-cart" data-item="Steakhouse" data-price="₦7,200">
               Add to Cart
             </button>
           </div>
@@ -101,9 +122,9 @@
 
         <div class="order-container">
           <div>
-            <p>Big King</p>
-            <p>₦5,500</p>
-            <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+            <p class="burger-name">Big King</p>
+            <p class="price">₦5,500</p>
+            <button class="add-to-cart" data-item="Big King" data-price="₦5,500">
               Add to Cart
             </button>
           </div>
@@ -117,9 +138,9 @@
 
         <div class="order-container">
         <div>
-          <p>Double Whopper</p>
-          <p>₦8,500</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <p class="burger-name">Double Whopper</p>
+          <p class="price">₦8,500</p>
+          <button class="add-to-cart" data-item="Double Whopper" data-price="₦8,500">
             Add to Cart
           </button>
         </div>
@@ -131,9 +152,9 @@
 
       <div class="order-container">
         <div>
-        <p>Big King XXL</p>
-        <p>₦9,900</p>
-        <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+        <p class="burger-name">Big King XXL</p>
+        <p class="price">₦9,900</p>
+        <button class="add-to-cart" data-item="Big King XLL" data-price="₦9,900">
           Add to Cart
         </button>
       </div>
@@ -142,6 +163,7 @@
         />
       </div>
       </div>
+ 
     </section>
 
 
@@ -153,9 +175,9 @@
 
       <div class="order-container">
         <div>
-        <p>Double Steakhouse</p>
-        <p>₦10,500</p>
-        <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+        <p class="burger-name">Double Steakhouse</p>
+        <p class="price">₦10,500</p>
+        <button class="add-to-cart" data-item="Double Steakhouse" data-price="₦10,500">
           Add to Cart
         </button>
       </div>
@@ -167,9 +189,9 @@
     
       <div class="order-container">
       <div>
-        <p>Whopper Jr</p>
-        <p>₦3,200</p>
-        <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+        <p class="burger-name">Whopper Jr</p>
+        <p class="price">₦3,200</p>
+        <button class="add-to-cart" data-item="Whopper Jr" data-price="₦3,200">
           Add to Cart
         </button>
       </div>
@@ -184,7 +206,7 @@
       <div>
         <p>Chesseburger</p>
         <p>₦2,200</p>
-        <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+        <button class="add-to-cart" data-item="Chesseburger" data-price="₦2,200">
           Add to Cart
         </button>
       </div>
@@ -202,7 +224,7 @@
       <div>
         <p>Hamburger</p>
         <p>₦1,900</p>
-        <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+        <button class="add-to-cart" data-item="Hamburger" data-price="₦1,900">
           Add to Cart
         </button>
         </div>
@@ -216,7 +238,7 @@
       <div>
         <p>Double Cheeseburger</p>
         <p>₦4,800</p>
-        <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+        <button class="add-to-cart" data-item="Double Cheeseburger" data-price="₦4,800">
           Add to Cart
         </button>
       </div>
@@ -234,7 +256,7 @@
           <div>
             <p>Chicken Royale</p>
             <p>₦4,300</p>
-            <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+            <button class="add-to-cart" data-item="Chicken Royale" data-price="₦4,300">
               Add to Cart
             </button>
           </div>
@@ -252,7 +274,7 @@
           <div>
           <p>Crispy Chicken</p>
           <p>₦3,800</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Crispy Chicken" data-price="₦3,800">
             Add to Cart
           </button>
         </div>
@@ -278,7 +300,7 @@
         <div>
           <p>Plantain Cubes</p>
           <p>₦1,600</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Plantain Cubes" data-price="₦1,600">
             Add to Cart
           </button>
           </div>
@@ -295,7 +317,7 @@
           <div>
           <p>Potato Cubes</p>
           <p>₦1,100</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Potato Cubes" data-price="₦1,100">
             Add to Cart
           </button>
         </div>
@@ -313,7 +335,7 @@
           <div>
           <p>Yam Fries</p>
           <p>₦2,500</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Yam Fries" data-price="₦2,500">
             Add to Cart
           </button>
           </div>
@@ -328,7 +350,7 @@
           <div>
           <p>Chicken Wings</p>
           <p>₦6,300</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Chicken Wings" data-price="₦6,300">
             Add to Cart
           </button>
           </div>
@@ -343,7 +365,7 @@
           <div>
             <p>Cheese Bites</p>
             <p>₦3,900</p>
-            <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+            <button class="add-to-cart" data-item="Cheese Bites" data-price="₦3,900">
               Add to Cart
             </button>
           </div>
@@ -357,7 +379,7 @@
           <div>
             <p>Chicken Nugets</p>
             <p>₦4,100</p>
-            <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+            <button class="add-to-cart" data-item="Chicken Nuggets" data-price="₦4,100">
               Add to Cart
             </button>
           </div>
@@ -372,7 +394,7 @@
           <div>
           <p>Onion Rings</p>
           <p>₦1,200</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Onion Rings" data-price="₦1,200">
             Add to Cart
           </button>
         </div>
@@ -395,7 +417,7 @@
           <div>
             <p>Eva Water</p>
             <p>₦500</p>
-            <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+            <button class="add-to-cart" data-item="Eva Water" data-price="₦500">
               Add to Cart
             </button>
           </div>
@@ -410,7 +432,7 @@
           <div>
           <p>Sprite</p>
           <p>₦600</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Sprite" data-price="₦600">
             Add to Cart
           </button>
           </div>
@@ -425,7 +447,7 @@
           <div>
           <p>Coke</p>
           <p>₦600</p>
-          <button class="add-to-cart" data-item="Whopper" data-price="5.99">
+          <button class="add-to-cart" data-item="Coke" data-price="₦600">
             Add to Cart
           </button>
           </div>
@@ -438,6 +460,8 @@
 
       </div>
     </section>
+
+    
 
   
 
